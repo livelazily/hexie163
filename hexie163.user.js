@@ -4,6 +4,7 @@
 // @version        0.1
 // @description    based on http://userscripts.org/scripts/show/98749
 // @include        http://*.163.com/*
+// @grant          GM_xmlhttpRequest
 // ==/UserScript==
 (function() {
 	var _host_name = window.location.hostname;
@@ -53,7 +54,7 @@
 			if (_) {
 				var total = _[1];
 				var show = _[2];
-				var p = (total == 0) ? 1: show / total;
+				var p = (total === 0) ? 1: show / total;
 				var percent_text = (100 - p * 100).toFixed(2);
 				element.innerHTML += ' (' + percent_text + '%)';
 			}
