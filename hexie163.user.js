@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           网易新闻和谐指数
 // @namespace      http://github.com/livelazily/hexie163
-// @version        0.1
+// @version        0.1.1
 // @description    based on http://userscripts.org/scripts/show/98749
 // @include        http://*.163.com/*
 // @grant          GM_xmlhttpRequest
